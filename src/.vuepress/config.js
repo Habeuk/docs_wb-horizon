@@ -96,8 +96,8 @@ module.exports = {
           path: "/docs/create_models/introduction",
           collapsable: true,
           children: [
-            { title: "Introduction", path: "/docs/create_models/introduction" },
-            { title: "Creation de layout", path: "/docs/create_models/create_layout" },
+            { title: "Introduction", path: "/docs/features/introduction" },
+            { title: "Import", path: "/docs/features/import" },
           ],
         },
       ],
