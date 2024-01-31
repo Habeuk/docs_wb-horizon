@@ -59,6 +59,16 @@ module.exports = {
     sidebar: {
       "/docs/": [
         {
+          "title": "Creation d'un modèle de page",
+          collapsable: true,
+          children : [
+            {
+              title: "introduction",
+              path: "/docs/modele-de-page"
+            }
+          ]
+        },
+        {
           title: "Presentation",
           path: "/docs/index",
           collapsable: false,
