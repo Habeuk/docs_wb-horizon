@@ -59,9 +59,62 @@ module.exports = {
     sidebar: {
       "/docs/": [
         {
+          title: "Gestion des sites et pages",
+          path: "/docs/gestion-sites-pages/introduction",
+          collapsable: true,
+          children: [
+            {
+              title: "Génération d'un site web",
+              path: "/docs/gestion-sites-pages/gen-siteweb",
+            },
+            {
+              title: "Quelques outils de customisation d'une page",
+              path: "/docs/gestion-sites-pages/custom-a-page",
+              collapsable: true,
+              children: [
+                {
+                  title: "Ajout d'une section dans une page",
+                  path: "/docs/gestion-sites-pages/custom-a-page/add-section"
+                },
+                {
+                  title: "Modification des couleurs d'un site",
+                  path: "/docs/gestion-sites-pages/custom-a-page/update-colors"
+                },
+                {
+                  title: "Modification du layout d'un paragraphe",
+                  path: "/docs/gestion-sites-pages/custom-a-page/alter-section-layout"
+                }
+              ]
+            },
+            {
+              title: "creation d'un page",
+              path: "/docs/gestion-sites-pages/create-a-page",
+            },
+            {
+              title: "Génération d'un modèle de page",
+              path: "/docs/gestion-sites-pages/gen-page",
+              collapsable: true,
+              children: [
+                {
+                  title: "génération de pages en général",
+                  path: "/docs/gestion-sites-pages/gen-page/for-all-pages"
+                },
+                {
+                  title: "génération de pages d'accueil",
+                  path: "/docs/gestion-sites-pages/gen-page/home-page"
+                }
+              ]
+            },
+            {
+              title: "Troubleshooting",
+              path: "/docs/gestion-sites-pages/troubleshooting",
+            }
+          ]
+        },
+        {
           "title": "Creation d'un modèle de page",
           collapsable: true,
-          children : [
+          children: [
             {
               title: "introduction",
               path: "/docs/modele-de-page"
