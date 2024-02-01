@@ -9,76 +9,85 @@ Il ne vous reste qu'a suivre les différentes étapes du formulaire à plusieurs
 
 ## Formulaire à plusieurs étapes
 
+après avoir fourni les valeurs demandées dans une étape du formulaire, il vous suffit de cliquer sur **Suivant** pour passer à l'étape suivante
+
 ### Étape introductive
 
 Dans cette étape il n'y a rien de particulier comme vous pouvez voir dans la capture ci dessous.
 Cliquez sur **Suivant** pour réellement débuter le processus
-
-<img src="../../assets/images/sui1.png">
+![suite1](../../assets/images/sui1.png)
 
 ### Étape 2: Nom de l'entreprise
 
-Dans cette étape, vous entrerez le nom de votre structure. Ce nom sera également le constituant principale du sous domaine du site qui vous sera fourni
+Dans cette étape, vous entrerez le nom de votre structure. Ce nom sera également le constituant principale du sous domaine du site qui vous sera fourni. Ceci fait, vous pouvez passer à l'étape suivante
 
 > [!NOTICE]
 > Les sites généré avec wb-horizon ont tous des domaines de la forme **https://sous-domain.wb-horizon.com** où le sous domaine un composé par le nom machine de l'entreprise suivis d'un nombre(uniquement si necessaire) qui rend ce sous domaine unique tant que le propriétaire n'a pas acheter un nom de domaine et configuré sont site pour faire référence au domaine en question
 
-<img src="../../assets/images/sui2.png">
+![suite2](../../assets/images/sui2.png)
 
-<br />
-<strong>Une fois cette etape finir il faudras cliquer sur le boutton suivant et vous verrez la page ci-dessus  sur laquelle vous allez choisir le theme de votre structure/model , une fois le theme choisir il faudras cliquer sur le boutton suivant comme cela est illustree sur l'image ci-dessus </strong>:
-<img src="../../assets/images/sui3.png">
+### Étape 3: Choix du type de theme
 
-<br />
+Dans cette étape, il vous est proposé deux mode pour le choix des couleurs de votre thème comme présenter dans la figure ci dessous.
+Vous pourrez remarquer dessus deux mode à savoir:
 
-<strong>Sur la page suivante vous allez choisir le theme de couleur et cliquer sur le boutton suivant comme l'indique l'image</strong> :
+- **Sélectionnez un theme de couleur**
+- **Choisir les couleurs**
 
-<br />
-<img src="../../assets/images/sui4.png">
-<br />
-<strong>Apres avoir choisir le theme de couleur , on clique sur le boutton suivant et on obtientlapage suivante comme l'indique l'image ci-dessus</strong>
-<br />
-<img src="../../assets/images/sui5.png">
+Vous pouvez voir ces deux modes comme de sous étapes de l'étape 3
+![suite3](../../assets/images/sui3.png)
 
-<br />
-<strong>Sur cette page comme l'indique l'image ci-dessus nous allons choisis la couleur , une fois cela est fais nous allons clique sur le boutton suivant et l'on obtiendras l'image suivante :</strong>
+#### Sélectionnez un theme de couleur
 
-<br />
+Comme présenter dans la figure ci dessous, dans cette sous-étape, vous pouvez choisir un thème ou tout simplement couleur principale de theme pour le site que vous souhaitez générer et les couleurs secondaires seront choisie automatique pour harmoniser un maximum la disposition des couleurs dans votre site. plus de details sur les couleurs seront données dans la seconde sous étape **Choisir les couleurs** qui offre plus de liberté
 
-<img src="../../assets/images/sui6.png">
+![suit4](../../assets/images/sui4.png)
 
-<br />
-<strong>Sur l'image ci-dessus il faut choisir le logo de son model et puis cliquer sur le boutton suivant et l'on obtiendras l'image suivante : </strong>
+#### Choisir les couleurs
 
-<br />
+Dans cette sous-étape, l'objectif est le même que dans la précédente sauf que, comme mentionné plus haut, elle offre plus de liberté quant au choix des différentes couleurs qui composeront le site que vous généré.
+En somme, les sites générés avec wb-horizon sont composés de principalement 4 couleurs à savoir:
 
-<img src="../../assets/images/sui7.png">
+- Couleur primaire: la couleur principale de votre site. Elle sera la couleur la plus présente dans l'ensemble de vos page
+- Couleur secondaire: la couleur destinée à accompagné votre couleur primaire pour eviter la monotonie
+- Couleur des liens: Couleur que prendront les liens du site que vous générez
+- Couleur d'arrière-plan : couleur d'arrière plan utilisé dans votre site
 
-<br />
+> [!NOTICE]
+> Ces couleurs sont appliqués sur des élement en particulier. si nous prenons par exemple la couleur d'arrière plan, elle ne sera visible que sur les blocs qui ont la classe bg-theme. Nous en parlerons dans la [Quelques outils de customisaton de page](/wb-horizon/custom-a-page)
+> inutile de préciser que vous devez choisir vos couleurs avec minutie bien que vous aillez la possibilité des les modifier plus tard une fois votre site généré.
 
-Sur cette page juste cliquer sur le boutton suivant et la , on obtiendras la page suivante comme l'indique l'image ci-apres :
+![suit5](../../assets/images/sui5.png)
 
-<br />
+### Étape 4: Logo de votre site
 
-<img src="../../assets/images/sui8.png">
+Une fois les couleurs de votre site choisies, vous devez renseigner une image qui fera office de logo pour votre siteweb dans l'étape qui vous sera présenter (voir l'illustration plus bas). Comme pour les couleurs, vous avez la possibilité de le modifier à une fois votre siteweb completement généré
 
-<br />
+![sui6](../../assets/images/sui6.png)
 
-Ici juste cliquer sur le boutton suivant et l'on obtient la page suivante comme l'indique l'image suivante :
+### Étape 5: Configuration du header
 
-<br />
+Étant donné que les barres de navigation des sites ont parfois besoins de quelques informations supplémentaire(liens vers les réseaux sociaux, slogan du site etc), il vous est propopsé dans cette étape de mettre ces informations à jour. le formaulaires vient avec quelques valeurs par défaut pour vous permettre d'avoir déjà un aperçu du contenu attendu dans chaque champs et donc faciliter le remplissage de lu champ en question. comme pour les images et le logo, vous aurez une fois le site généré la possibilité de modifier ces informations selon votre bon vouloir.
 
-<img src="../../assets/images/sui9.png">
+![suit7](../../assets/images/sui7.png)
 
-<br />
+### Étape 6: Configuration du footer
 
-A ce stade nous sommes presque a la fin de creation de notre model de site ,ceci dit nous allons juste cliquer sur le boutton "Creer un site" , et l'on obtiendras la page suivante comme l'indique l'image suivante :
+Comme pour les header il vous est possiblie de modifier les éléments remplissant votre footer avant de finaliser la génération de votre site
 
-<br />
+![suit8](../../assets/images/sui8.png)
 
-<img src="../../assets/images/sui10.png">
+### Étape finale: Finalisation de la génération du site
 
-<br />
+Nous arrivons à la dernière étape de notre processus de génération du siteweb avec l'application [wb-horizon](https://wb-horizon.com)
+Il ne vous reste plus qu'a cliquer sur le bouton **Je crée mon site** pour lancer le processus en arrière plan pour générer le site avec les données que vous aurez choisis dans les étapes qui ont précédé.
+
+![sui9](../../assets/images/sui9.png)
+
+Vos n'avez plus qu'a patienter que le serveur wb-horizon fasse tout le travail pour vous. La figure ci dessous vous montre comment se passera l'attente de la fin du processus de génération.
+En somme à ce niveau l'application vous indique à quelle étape elle est dans son processus de génération de votre site et vous notifiera en cas d'erreur dans sa tâche
+
+![sui10](../../assets/images/sui10.png)
 
 A ce niveau l'on devras attendre que le model de site finir de configurer toutes les sections du dit model et plus bas lorsque toutes les configurations seront finis , on auras l'image suivante :
 
