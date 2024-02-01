@@ -89,17 +89,13 @@ En somme à ce niveau l'application vous indique à quelle étape elle est dans 
 
 ![sui10](../../assets/images/sui10.png)
 
-A ce niveau l'on devras attendre que le model de site finir de configurer toutes les sections du dit model et plus bas lorsque toutes les configurations seront finis , on auras l'image suivante :
-
-<br />
+Une fois la génération de votre site terminé, vous devriez avoir un rendu similaire à celui ci dessous
 
 <img src="../../assets/images/sui11.png">
 
-<br />
+Vous pourrez donc accéder à votre site simplement en cliquant sur le bouton **Visit your new site**
+<br/>
 
-A ce stade il faut copier le lien au bas de la page et l'ouvrir dans un autre onglet , une fois la page ouverte , l'utilisateur pourras y apporter des modifications selon sa convenance . Ceci dit supposons que le lien creer lors de la creation de ce model de site est le lien suivant: https://batiment723.wb-horizon.com/fr/ , ce lien en faite refere a un model de site faisant dans le batiment.
-Une fois la page de ce model ouvert , a premiere vu l'on auras ceci comme l'indique l'image ci-apres :
-
-<br />
-
-<img src="../../assets/images/full-batiment.png">
+<div class="pl-5 pr-2 border-info text-black-50 border-left">
+Les identifiants du propriétaire du site que vous venez de générer(ceux du propriétaire du sous domaine auquel vous avez accédé en cliquant sur le bouton <em>Visit your new site</em>) sont ceux du compte avec lequel vous avez généré votre site sur le domaine principal wb-horizon
+</div>
