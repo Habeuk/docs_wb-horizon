@@ -68,6 +68,10 @@ module.exports = {
               path: "/docs/gestion-sites-pages/gen-siteweb",
             },
             {
+              title: "creation d'un page",
+              path: "/docs/gestion-sites-pages/create-a-page",
+            },
+            {
               title: "Quelques outils de customisation d'une page",
               path: "/docs/gestion-sites-pages/custom-a-page",
               collapsable: true,
@@ -87,10 +91,6 @@ module.exports = {
               ]
             },
             {
-              title: "creation d'un page",
-              path: "/docs/gestion-sites-pages/create-a-page",
-            },
-            {
               title: "Génération d'un modèle de page",
               path: "/docs/gestion-sites-pages/gen-page",
               collapsable: true,
@@ -100,7 +100,7 @@ module.exports = {
                   path: "/docs/gestion-sites-pages/gen-page/for-all-pages"
                 },
                 {
-                  title: "génération de pages d'accueil",
+                  title: "génération de pages  d'accueil",
                   path: "/docs/gestion-sites-pages/gen-page/home-page"
                 }
               ]
