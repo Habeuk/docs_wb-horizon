@@ -45,16 +45,16 @@ Parmis tous ces blocs, le bloc qui nous intéresse ici est celui qui a pour titr
 - Partenaire
 - rc-web
 
-Ces labels représente en fait la catégorie de la page(il est prévu que cela soit changé dans les futures version de l'application pour un label plus intuitif)
+Ces labels représente en fait les différentes catégories possibles pour une page(il est prévu que cela soit changé dans les futures version de l'application pour un label plus intuitif)
 
 <div class="pl-5 pr-2 border-info text-black-50 border-left text-info mb-4">
  <p class="font-weight-bold text-info">INFO</p>
  les entités qui sont listées dans ce le tableau de ce bloc sont les pages qui ont été créé après la création du site. les pages de base ayant été attaché au site n'y figure pas.
 </div>
 
-<div class="pl-5 t- pr-2 border-warning text-black-50 border-left text-warning">
- <p class="font-weight-bold text-warning">WARNING</p>
- Il n'est pas impossible que lors de votre première accés à cette partie des configuration de votre site vous ne trouviez aucun site avec l'un des label mentionné un peu plus haut. Cela voudra dire qu'aucune page supplémentaire n'a jusque là été ajouté à votre site. Pour ajouter une page dans ce cas(tout du moins dans la version courante de l'application) il vous faudra vous rapprocher d'un administrateur qui lui pourra vous ajouter une page et par la même occasion vous permettre d'en ajouter d'autre sans soucis dans le futur
+<div class="pl-5 t- pr-2 border-warning text-black-50 border-left text-info">
+ <p class="font-weight-bold text-info">ASTUCE</p>
+ Si vous rechercher l'un de ces label et qu'il n'existe pas c'est, c'est parce qu'il n'y a sur le moment aucune page sur le site qui est de cette catégorie. Cherchez en juste un autre pour voir le bouton **ajouter** dont il est mention plus bas
 </div>
 
 **Ex**:
