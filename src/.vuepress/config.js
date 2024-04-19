@@ -78,17 +78,17 @@ module.exports = {
               children: [
                 {
                   title: "Ajout d'une section dans une page",
-                  path: "/docs/gestion-sites-pages/custom-a-page/add-section"
+                  path: "/docs/gestion-sites-pages/custom-a-page/add-section",
                 },
                 {
                   title: "Modification des couleurs d'un site",
-                  path: "/docs/gestion-sites-pages/custom-a-page/update-colors"
+                  path: "/docs/gestion-sites-pages/custom-a-page/update-colors",
                 },
                 {
                   title: "Modification du layout d'un paragraphe",
-                  path: "/docs/gestion-sites-pages/custom-a-page/alter-section-layout"
-                }
-              ]
+                  path: "/docs/gestion-sites-pages/custom-a-page/alter-section-layout",
+                },
+              ],
             },
             {
               title: "Génération d'un modèle de page",
@@ -97,29 +97,29 @@ module.exports = {
               children: [
                 {
                   title: "génération de pages en général",
-                  path: "/docs/gestion-sites-pages/gen-page/for-all-pages"
+                  path: "/docs/gestion-sites-pages/gen-page/for-all-pages",
                 },
                 {
                   title: "génération de pages  d'accueil",
-                  path: "/docs/gestion-sites-pages/gen-page/home-page"
-                }
-              ]
+                  path: "/docs/gestion-sites-pages/gen-page/home-page",
+                },
+              ],
             },
             {
               title: "Troubleshooting",
               path: "/docs/gestion-sites-pages/troubleshooting",
-            }
-          ]
+            },
+          ],
         },
         {
-          "title": "Creation d'un modèle de page",
+          title: "Creation d'un modèle de page",
           collapsable: true,
           children: [
             {
               title: "introduction",
-              path: "/docs/modele-de-page"
-            }
-          ]
+              path: "/docs/modele-de-page",
+            },
+          ],
         },
         {
           title: "Presentation",
@@ -143,6 +143,7 @@ module.exports = {
           children: [
             { title: "Introduction", path: "/docs/create_models/introduction" },
             { title: "Creation de layout", path: "/docs/create_models/create_layout" },
+            { title: "Association de domaines", path: "/docs/create_models/association_domain" },
           ],
         },
         {
