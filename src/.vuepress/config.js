@@ -112,6 +112,21 @@ module.exports = {
           ],
         },
         {
+          title: "Configuration du module hbkcolissimochrono",
+          path: "/docs/hbkcolissimochrono/introduction",
+          collapsable: true,
+          children: [
+            {
+              title: "Installation",
+              path: "/docs/hbkcolissimochrono/installation",
+            },
+            {
+              title: "Configuration de base",
+              path: "/docs/hbkcolissimochrono/configuration-de-base"
+            }
+          ]
+        },
+        {
           title: "Creation d'un modèle de page",
           collapsable: true,
           children: [

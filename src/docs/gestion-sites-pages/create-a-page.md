@@ -150,3 +150,11 @@ nous avons donc ainsi
 ![menu-completed](../../assets/images/menu-completed.png)
 
 ## Ajout d'un contenu à une page
+
+Maintenant que nous avons créé notre premier page et que celle ci est disponible dans notre menu on peut passer à l'étape qui est pour nous la plus important, **Ajouter du contenu**
+
+Nous avons déjà eu à mentionner dans notre tuto que les sitewebs ne sont qu'un assemblage de page et ceci est la logique universel. Par contre, ce que nous n'avons pas dis c'est de quoi sont formées nos pages. La logique derrière l'application wb-horizon veut que nos ne soient en fait qu'un assemblage de paragraph. Cela paraît bizarre mais c'est bien cela. Attention, nous ne parlons pas là des balises **p** mais d'une entité drupal qui fonctionne comme des blocs que l'on va mettre les uns à la suite des autres afin d'obtenir un rendu particulier. Il est à notre que chaque paragraphe à ses propres configurations et donc ils ont chacun des rendus différents.
+
+Si jusque là vous êtes toujours perdu ne vous inquiétez pas nous n'allons pas nous arrêter à la théorie. Nous allons maintenant passer à l'ajout d'un contenu (Un paragraphe encore appelé par section pour des besoins de compréhension).
+
+Dans la page vide que nous avons créé dans les sections précedentes vous avez probablement remarqué des boutons faisant références à des actions
