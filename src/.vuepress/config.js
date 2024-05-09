@@ -123,7 +123,21 @@ module.exports = {
             {
               title: "Configuration de base",
               path: "/docs/hbkcolissimochrono/configuration-de-base"
-            }
+            },
+            {
+              title: "Index",
+              collapsable: true,
+              children: [
+                {
+                  title: "Colissimo",
+                  path: "/docs/hbkcolissimochrono/indexes/colissimo"
+                }, {
+                  title: "Chronopost",
+                  collapsable: true,
+                  path: "/docs/hbkcolissimochrono/indexes/chronopost"
+                }
+              ]
+            },
           ]
         },
         {
