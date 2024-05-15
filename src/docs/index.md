@@ -1,27 +1,29 @@
 # Presentation
 
-Wb-Horizon est une application web qui permet de Generer un site web à partir d'un model, et de l'exporter si l'utilisateur le souhaite.
+This is an installation guide for the Bibliothèque_numérique theme (Drupal 10). This document will guide you through installing the theme from scratch on your server. This documentation will also help you manage different parts of the website backend and manage your website content using this theme.
 
-L'application est construite autour de 2 modules <a href="https://www.drupal.org/project/domain"><strong> domain </strong></a> et <strong>layout builder (core)</strong>. Sur ces derniers viennent s'appuyent plus de 60 modules contribs et pres de 54 modules customs.
-<br>
-Pour en savoir un peu plus, voir le repos <a href="https://github.com/Habeuk/wb-horizon">wb-horizon</a>.
-<br>
+## A quick refresher
 
-## organisation
+Throughout this guide we'll be using terms such as sections, layouts, buttons, etc., so it's important that you understand this right away.
 
-<br>
-Nous distinguons deux grandes versions l'application de base <strong>AppB</strong> (generateur de site web) et l'application derivée <strong>AppD</strong> (permet à un utilisateur d'installer le site exporter ).
-<br>
-- AppB est accessible sur ce depot  <a href="https://github.com/Habeuk/wb-horizon"> wb-horizon </a>. Version >= 9.1.1
-<br>
-- AppD est accessible sur ce depot  <a href="https://github.com/Habeuk/wb-horizon"> wb_horizon_generate </a>.Version >= 1.1.9
-<br>
+### Sections
 
-## concepts
+A section is a block that represents or highlights information. It occupies the entire width of the page. On a home page, for example, you might have several sections: a section for presenting summaries of the different services, a section for displaying the blog summary, a section containing a contact form, and so on.
 
-Pour une bonne comprenhension de d'application, il est important de comprendre les concepts suivant :
+##### Example: 1
 
-<ul>
-<li> Model de site web : est le mole qui permet de generer un site web</li>
-<li> Model de page web : est un mole qui permet de generer une page web</li>
-</ul>
+<figure class="figure">
+  <img src="../assets/images/section-last-article-blog.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption"> Section representing summaries of the latest blog posts </figcaption>
+</figure>
+
+##### Example: 2
+
+<figure class="figure">
+  <img src="../assets/images/section-services.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption"> Section representing service summaries </figcaption>
+</figure>
+
+### Layout
+
+A layout is a graphical arrangement of elements such as title, description, images, icons, etc. From a Drupal point of view, a layout can be a fairly simple element such as a button or a fairly complicated structure such as a Section , a slideshow (slider)...

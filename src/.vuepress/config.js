@@ -2,14 +2,14 @@
 const { description } = require("../../package");
 
 module.exports = {
-  base: "/wb-horizon/",
+  base: "/bindh/",
   // publicPath: " ",
   // publicPath: process.env.BASE_URL,
   // assetsDir: process.env.BASE_URL,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Wb-Horizon documentation",
+  title: "Documentation du site la petite sorcière by Habeuk v1.0.0",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -26,7 +26,10 @@ module.exports = {
   head: [
     ["meta", { name: "theme-color", content: "#223e70" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -59,142 +62,119 @@ module.exports = {
     sidebar: {
       "/docs/": [
         {
-          title: "Gestion des sites et pages",
-          path: "/docs/gestion-sites-pages/introduction",
-          collapsable: true,
-          children: [
-            {
-              title: "Génération d'un site web",
-              path: "/docs/gestion-sites-pages/gen-siteweb",
-            },
-            {
-              title: "creation d'un page",
-              path: "/docs/gestion-sites-pages/create-a-page",
-            },
-            {
-              title: "Quelques outils de customisation d'une page",
-              path: "/docs/gestion-sites-pages/custom-a-page",
-              collapsable: true,
-              children: [
-                {
-                  title: "Ajout d'une section dans une page",
-                  path: "/docs/gestion-sites-pages/custom-a-page/add-section",
-                },
-                {
-                  title: "Modification des couleurs d'un site",
-                  path: "/docs/gestion-sites-pages/custom-a-page/update-colors",
-                },
-                {
-                  title: "Modification du layout d'un paragraphe",
-                  path: "/docs/gestion-sites-pages/custom-a-page/alter-section-layout",
-                },
-              ],
-            },
-            {
-              title: "Génération d'un modèle de page",
-              path: "/docs/gestion-sites-pages/gen-page",
-              collapsable: true,
-              children: [
-                {
-                  title: "génération de pages en général",
-                  path: "/docs/gestion-sites-pages/gen-page/for-all-pages",
-                },
-                {
-                  title: "génération de pages  d'accueil",
-                  path: "/docs/gestion-sites-pages/gen-page/home-page",
-                },
-              ],
-            },
-            {
-              title: "Troubleshooting",
-              path: "/docs/gestion-sites-pages/troubleshooting",
-            },
-          ],
-        },
-        {
-          title: "Configuration du module hbkcolissimochrono",
-          path: "/docs/hbkcolissimochrono/introduction",
-          collapsable: true,
-          children: [
-            {
-              title: "Installation",
-              path: "/docs/hbkcolissimochrono/installation",
-            },
-            {
-              title: "Configuration de base",
-              path: "/docs/hbkcolissimochrono/configuration-de-base"
-            },
-            {
-              title: "Index",
-              collapsable: true,
-              children: [
-                {
-                  title: "Colissimo",
-                  path: "/docs/hbkcolissimochrono/indexes/colissimo"
-                }, {
-                  title: "Chronopost",
-                  collapsable: true,
-                  path: "/docs/hbkcolissimochrono/indexes/chronopost"
-                }
-              ]
-            },
-          ]
-        },
-        {
-          title: "Creation d'un modèle de page",
-          collapsable: true,
-          children: [
-            {
-              title: "introduction",
-              path: "/docs/modele-de-page",
-            },
-          ],
-        },
-        {
-          title: "Presentation",
-          path: "/docs/index",
+          title: "Ajout des produits et des variations",
+          path: "/docs/produits",
           collapsable: false,
-          children: [{ title: "Introduction", collapsable: false }],
-        },
-        {
-          title: "Creer un modele site web",
-          path: "/docs/create_models/introduction",
-          collapsable: true,
           children: [
-            { title: "Introduction", path: "/docs/create_models/introduction" },
-            { title: "Creation de layout", path: "/docs/create_models/create_layout" },
+            { title: "Produits", path: "produits" },
+            { title: "Variations", path: "Variations" },
           ],
         },
         {
-          title: "Tutos et astuces",
-          path: "/docs/create_models/introduction",
+          title: "Ajout des termes taxonomies",
+          path: "/docs/utilisation/taxonomiesTerms",
           collapsable: true,
-          children: [
-            { title: "Introduction", path: "/docs/create_models/introduction" },
-            { title: "Creation de layout", path: "/docs/create_models/create_layout" },
-            { title: "Association de domaines", path: "/docs/create_models/association_domain" },
-          ],
+        },
+        
+        {
+          title: "modification d'une page",
+          path: "/docs/utilisation/modification-page",
+          collapsable: true,
         },
         {
-          title: "Concepts",
-          path: "/docs/create_models/introduction",
+          title: "modification du menu",
+          path: "/docs/utilisation/modification-menu",
           collapsable: true,
           children: [
-            { title: "Introduction", path: "/docs/create_models/introduction" },
-            { title: "Creation de layout", path: "/docs/create_models/create_layout" },
+            {
+              title: "Menu configuration",
+              path: "/docs/utilisation/creation-menus",
+            },
+            {
+              title: "adding taxonomies",
+              path: "/docs/utilisation/taxonomies",
+            },
+            {
+              title: "Documents",
+              path: "/docs/utilisation/document",
+            },
+            {
+              title: "other modifications",
+              path: "/docs/utilisation/auther-examples",
+            },
           ],
+        },
+
+        {
+          title: "Blog",
+          path: "/docs/utilisation/Blog",
+          collapsable: true,
         },
         {
-          title: "Fonctionnalitées",
-          path: "/docs/create_models/introduction",
+          title: "modification du footer",
+          path: "/docs/utilisation/modification-footer",
           collapsable: true,
-          children: [
-            { title: "Introduction", path: "/docs/features/introduction" },
-            { title: "Import", path: "/docs/features/import" },
-          ],
         },
+        
+        
+      ],
+      "/foo/": [
+        "" /* /foo/ */,
+        "one" /* /foo/one.html */,
+        "two" /* /foo/two.html */,
+      ],
+
+      "/bar/": [
+        "" /* /bar/ */,
+        "three" /* /bar/three.html */,
+        "four" /* /bar/four.html */,
+      ],
+      // fallback
+      "/": [
+        "" /* / */,
+        "contact" /* /contact.html */,
+        "about" /* /about.html */,
       ],
     },
+
+    // sidebar: [
+    //   {
+    //     title: "Presentation", // required
+    //     path: "/docs/", // optional, link of the title, which should be an absolute path and must exist
+    //     collapsable: false, // optional, defaults to true
+    //     sidebarDepth: 1, // optional, defaults to 1
+    //     //children: ["/"],
+    //   },
+    //   {
+    //     title: "Group 2",
+    //     children: [
+    //       /* ... */
+    //     ],
+    //     initialOpenGroupIndex: -1, // optional, defaults to 0, defines the index of initially opened subgroup
+    //   },
+    // ],
+    // sidebar: {
+    //   "/docs/": [
+    //     {
+    //       title: "Presentation",
+    //       collapsable: true,
+    //       //children: ["", "presentation"],
+
+    //     },
+    //     {
+    //       title: "Installation",
+    //       collapsable: true,
+    //       children: ["", "installation"],
+    //     },
+    //   ],
+    //   "/guide/": [
+    //     {
+    //       title: "Guide",
+    //       collapsable: false,
+    //       children: ["", "using-vue"],
+    //     },
+    //   ],
+    // },
   },
 
   /**
