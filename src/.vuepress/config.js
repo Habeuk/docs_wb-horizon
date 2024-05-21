@@ -1,4 +1,5 @@
 // https://dev.to/kouts/combine-vuepress-and-bootstrap-to-create-a-docs-site-and-deploy-it-to-netlify-4880
+const path = require("path");
 const { description } = require("../../package");
 
 module.exports = {
@@ -112,14 +113,14 @@ module.exports = {
           ],
         },
         {
-          title: "Configuration du module hbkcolissimochrono",
+          title: "Configuration des methodes de livraison",
           path: "/docs/hbkcolissimochrono/introduction",
           collapsable: true,
           children: [
-            {
-              title: "Installation",
-              path: "/docs/hbkcolissimochrono/installation",
-            },
+            // {
+            //   title: "Installation",
+            //   path: "/docs/hbkcolissimochrono/installation",
+            // },
             {
               title: "Configuration de base",
               path: "/docs/hbkcolissimochrono/configuration-de-base"
@@ -138,6 +139,11 @@ module.exports = {
                 }
               ]
             },
+            {
+              title: "Utiliser une methode préconfigurée",
+              path: "/docs/hbkcolissimochrono/presets",
+              collapsable: true
+            }
           ]
         },
         {
