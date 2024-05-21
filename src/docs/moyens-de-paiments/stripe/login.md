@@ -10,7 +10,7 @@ Pour commencer à utiliser Stripe, vous devez créer un compte en fournissant ce
 2. Remplissez le formulaire d'inscription avec les informations suivantes :
    ![créer un  compte"](../../../assets/images/stripe/signin.png)
 
-• **E-mail :**Votre adresse e-mail pour les communications.
+• **E-mail :** Votre adresse e-mail pour les communications.
 
 • **Nom complet :** Votre nom tel qu'il apparaîtra sur le compte.
 

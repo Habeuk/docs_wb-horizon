@@ -150,7 +150,7 @@ module.exports = {
               path: "/docs/moyens-de-paiments/stripe/login"
             },
             {
-              title: "Stripe",
+              title: "Configuration du site wb-horizon",
               path: "/docs/moyens-de-paiments/stripe/site-config"
             }
           ]
