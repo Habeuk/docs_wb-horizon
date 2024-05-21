@@ -141,6 +141,21 @@ module.exports = {
           ]
         },
         {
+          title: "Configuration des moyens de paiment",
+          // path: "/docs/moyens-de-paiment",
+          collapsable: true,
+          children: [
+            {
+              title: "Stripe",
+              path: "/docs/moyens-de-paiments/stripe/login"
+            },
+            {
+              title: "Stripe",
+              path: "/docs/moyens-de-paiments/stripe/site-config"
+            }
+          ]
+        },
+        {
           title: "Creation d'un modèle de page",
           collapsable: true,
           children: [
