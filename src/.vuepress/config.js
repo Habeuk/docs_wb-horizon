@@ -117,16 +117,21 @@ module.exports = {
           path: "/docs/hbkcolissimochrono/introduction",
           collapsable: true,
           children: [
-            // {
-            //   title: "Installation",
-            //   path: "/docs/hbkcolissimochrono/installation",
-            // },
+            {
+              title: "Installation",
+              path: "/docs/hbkcolissimochrono/installation",
+            },
             {
               title: "Configuration de base",
               path: "/docs/hbkcolissimochrono/configuration-de-base"
             },
             {
-              title: "Index",
+              title: "Utiliser une methode préconfigurée",
+              path: "/docs/hbkcolissimochrono/presets",
+              collapsable: true
+            },
+            {
+              title: "Grilles tarifaires par defauts",
               collapsable: true,
               children: [
                 {
@@ -139,11 +144,6 @@ module.exports = {
                 }
               ]
             },
-            {
-              title: "Utiliser une methode préconfigurée",
-              path: "/docs/hbkcolissimochrono/presets",
-              collapsable: true
-            }
           ]
         },
         {
