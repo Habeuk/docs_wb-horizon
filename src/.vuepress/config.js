@@ -132,6 +132,7 @@ module.exports = {
             },
             {
               title: "Grilles tarifaires par defauts",
+              path: "/docs/hbkcolissimochrono/indexes",
               collapsable: true,
               children: [
                 {
