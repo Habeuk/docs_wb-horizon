@@ -163,6 +163,20 @@ module.exports = {
           ]
         },
         {
+          title: "Configuration après import de votre site",
+          path: "/docs/configurations-post-import/introduction",
+          children: [
+            {
+              title: "Passerelles de paiements",
+              path: "/docs/configurations-post-import/payments"
+            },
+            {
+              title: "Méthodes de livraison",
+              path: "/docs/configurations-post-import/shipping"
+            }
+          ]
+        },
+        {
           title: "Creation d'un modèle de page",
           collapsable: true,
           children: [
