@@ -27,7 +27,10 @@ module.exports = {
   head: [
     ["meta", { name: "theme-color", content: "#223e70" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -71,6 +74,10 @@ module.exports = {
             {
               title: "creation d'un page",
               path: "/docs/gestion-sites-pages/create-a-page",
+            },
+            {
+              title: "Créer un modèle à partir d'un model existant",
+              path: "/docs/gestion-sites-pages/duplicate-a-page",
             },
             {
               title: "Quelques outils de customisation d'une page",
@@ -123,12 +130,12 @@ module.exports = {
             },
             {
               title: "Configuration de base",
-              path: "/docs/hbkcolissimochrono/configuration-de-base"
+              path: "/docs/hbkcolissimochrono/configuration-de-base",
             },
             {
               title: "Utiliser une methode préconfigurée",
               path: "/docs/hbkcolissimochrono/presets",
-              collapsable: true
+              collapsable: true,
             },
             {
               title: "Grilles tarifaires par defauts",
@@ -137,15 +144,16 @@ module.exports = {
               children: [
                 {
                   title: "Colissimo",
-                  path: "/docs/hbkcolissimochrono/indexes/colissimo"
-                }, {
+                  path: "/docs/hbkcolissimochrono/indexes/colissimo",
+                },
+                {
                   title: "Chronopost",
                   collapsable: true,
-                  path: "/docs/hbkcolissimochrono/indexes/chronopost"
-                }
-              ]
+                  path: "/docs/hbkcolissimochrono/indexes/chronopost",
+                },
+              ],
             },
-          ]
+          ],
         },
         {
           title: "Configuration des moyens de paiment",
@@ -154,13 +162,13 @@ module.exports = {
           children: [
             {
               title: "Stripe",
-              path: "/docs/moyens-de-paiments/stripe/login"
+              path: "/docs/moyens-de-paiments/stripe/login",
             },
             {
               title: "Configuration du site wb-horizon",
-              path: "/docs/moyens-de-paiments/stripe/site-config"
-            }
-          ]
+              path: "/docs/moyens-de-paiments/stripe/site-config",
+            },
+          ],
         },
         {
           title: "Configuration après import de votre site",
@@ -168,13 +176,13 @@ module.exports = {
           children: [
             {
               title: "Passerelles de paiements",
-              path: "/docs/configurations-post-import/payments"
+              path: "/docs/configurations-post-import/payments",
             },
             {
               title: "Méthodes de livraison",
-              path: "/docs/configurations-post-import/shipping"
-            }
-          ]
+              path: "/docs/configurations-post-import/shipping",
+            },
+          ],
         },
         {
           title: "Creation d'un modèle de page",
@@ -198,7 +206,10 @@ module.exports = {
           collapsable: true,
           children: [
             { title: "Introduction", path: "/docs/create_models/introduction" },
-            { title: "Creation de layout", path: "/docs/create_models/create_layout" },
+            {
+              title: "Creation de layout",
+              path: "/docs/create_models/create_layout",
+            },
           ],
         },
         {
@@ -207,8 +218,14 @@ module.exports = {
           collapsable: true,
           children: [
             { title: "Introduction", path: "/docs/create_models/introduction" },
-            { title: "Creation de layout", path: "/docs/create_models/create_layout" },
-            { title: "Association de domaines", path: "/docs/create_models/association_domain" },
+            {
+              title: "Creation de layout",
+              path: "/docs/create_models/create_layout",
+            },
+            {
+              title: "Association de domaines",
+              path: "/docs/create_models/association_domain",
+            },
           ],
         },
         {
@@ -217,7 +234,10 @@ module.exports = {
           collapsable: true,
           children: [
             { title: "Introduction", path: "/docs/create_models/introduction" },
-            { title: "Creation de layout", path: "/docs/create_models/create_layout" },
+            {
+              title: "Creation de layout",
+              path: "/docs/create_models/create_layout",
+            },
           ],
         },
         {
