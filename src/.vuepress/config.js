@@ -80,6 +80,10 @@ module.exports = {
               path: "/docs/gestion-sites-pages/duplicate-a-page",
             },
             {
+              title: "Ajouter la vue des blogs à une page",
+              path: "/docs/gestion-sites-pages/home-blogs",
+            },
+            {
               title: "Quelques outils de customisation d'une page",
               path: "/docs/gestion-sites-pages/custom-a-page",
               collapsable: true,

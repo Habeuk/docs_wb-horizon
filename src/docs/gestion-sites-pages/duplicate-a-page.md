@@ -50,9 +50,9 @@ accéder depuis le domaine cible (caviste737 dans notre cas).
 
 - Remplissez le formulaire :
 
-  - [**Titre du lien dans le menu**](https://www.bing.com/search?form=SKPBOT&q=Titre%20du%20lien%20dans%20le%20menu) : Entrez le titre qui sera affiché sur le menu (dans notre cas, nous mettrons simplement Blogs).
+  - **Titre du lien dans le menu** : Entrez le titre qui sera affiché sur le menu (dans notre cas, nous mettrons simplement Blogs).
 
-  - [**Lien**](https://www.bing.com/search?form=SKPBOT&q=Lien) : Entrez le lien vers la page que vous venez d’ajouter à votre site. Celui-ci est de la forme « /site-internet-entity/{Id de la page} » où il faudra remplacer {Id de la page} par l’ID fourni à la fin de la duplication (5488 dans notre cas, donc /site-internet-entity/5488).
+  - **Lien** : Entrez le lien vers la page que vous venez d’ajouter à votre site. Celui-ci est de la forme « /site-internet-entity/{Id de la page} » où il faudra remplacer {Id de la page} par l’ID fourni à la fin de la duplication (5488 dans notre cas, donc /site-internet-entity/5488).
 
 ![champ domaine](../../assets/images/duplication/image_8.png)
 
@@ -90,7 +90,9 @@ Remplacez {id du modèle de page} par l’ID de votre modèle de page d’accuei
 
 - Enregistrez vos modifications.
 
-### 7. Résoudre les problèmes de style
+## Trouble Shooting
+
+### Résoudre les problèmes de style
 
 #### Recharger les styles :
 
