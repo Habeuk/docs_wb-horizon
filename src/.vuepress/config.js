@@ -160,6 +160,25 @@ module.exports = {
           ],
         },
         {
+          title: "Exporter et installer un site sur votre hebergement",
+          path: "/docs/export-import/introduction",
+          collapsable: true,
+          children: [
+            {
+              title: "Exporter votre site",
+              path: "/docs/export-import/exporter-votre-site",
+            },
+            {
+              title: "Installer votre site",
+              path: "/docs/export-import/installer-votre-site",
+            },
+            {
+              title: "Importer votre site",
+              path: "/docs/export-import/importer-votre-site",
+            },
+          ],
+        },
+        {
           title: "Configuration des moyens de paiment",
           // path: "/docs/moyens-de-paiment",
           collapsable: true,
