@@ -72,8 +72,23 @@ Methode 1 : pour debutant <br>
 Le fichier telecharger lors des etapes precedante se termine par "...wb*horizon_com.zip". Dézipper ce fichier, à partir de fillezilla, **copier son contenu vers /www**.<br>
 \_Cette methode est assez lente, et peut prendre jusqu'à 1 heure en fonction de votre vitesse de connexion.*<br>
 Methode 2 : PRO <br>
-Transferer le fichier zip directement sur /www. Connectez vous via un terminal (SSH) dezipper et transferer le contenu dans /www. N'oubliez pas de supprimer le dossier vide portant le nom "...wb_horizon_com".
+Transferer le fichier zip directement sur /www. Connectez vous via un terminal (SSH) dezipper et transferer le contenu dans /www.
+<br> NB : N'oubliez pas de supprimer le dossier vide portant le nom "...wb_horizon_com" et le fichier zip.
 
 ```
 ssh renothy@ssh.cluster027.hosting.ovh.net:22
+mv  {...}_wb_horizon_com/{.,}* ~/www/
+rm -rf {...}_wb_horizon_c*
 ```
+
+## Installation de base
+
+Dans cette etape nous allons mettre sur pied l'environnement permettant d'accueillir les données de notre site web. <br>
+accedez à votre domaine via votre navigateur : <br>
+![image](../../assets/images/web-cloud-12.png)
+Remplisser les informations : <br>
+![image](../../assets/images/web-cloud-13.png)
+L'installation se poursuit de maniere automatique : <br>
+![image](../../assets/images/web-cloud-14.png)
+A la fin de se processus vous devez creer un nom d'utilisateur et un mot de passe pour le compte administrateur principal.
+![image](../../assets/images/web-cloud-15.png)
