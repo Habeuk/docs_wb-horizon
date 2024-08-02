@@ -27,10 +27,7 @@ module.exports = {
   head: [
     ["meta", { name: "theme-color", content: "#223e70" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
-    ],
+    ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
   ],
 
   /**
@@ -169,7 +166,7 @@ module.exports = {
               path: "/docs/export-import/exporter-votre-site",
             },
             {
-              title: "Installer votre site",
+              title: "Transfert des fichiers et installation de base",
               path: "/docs/export-import/installer-votre-site",
             },
             {
