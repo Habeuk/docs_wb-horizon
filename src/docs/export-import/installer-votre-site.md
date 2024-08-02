@@ -46,13 +46,13 @@ Vous devez patienter quelques minutes avant que cela ne prenne effet. <br>
   ![image](../../assets/images/web-cloud-7.png)
 
 - **3/3 Mise en place de la base de donnée** : cliquez sur "action" ensuite "creer une base de données".
-<div  class="alert alert-warning"> NB: vous devez retenir le mot de passe et le nom d'utilisateur, car vous aurriez besoin de ces informations pour la suite. </div>
+<div class="alert alert-warning"> NB: vous devez retenir le mot de passe et le nom d'utilisateur, car vous aurriez besoin de ces informations pour la suite. </div>
 ![image](../../assets/images/web-cloud-8.png)
 ![image](../../assets/images/web-cloud-9.png)
 ![image](../../assets/images/web-cloud-10.png)
 Une fois ces etapes terminer patientez quelques minute, vous devez obtenir ceci :
 ![image](../../assets/images/web-cloud-11.png)
-<div  class="alert alert-warning"> Les informations avec les fleches dessus sont tres importante pour la suite. </div>
+<div class="alert alert-warning"> Les informations avec les fleches dessus sont tres importante pour la suite. </div>
 Sur ceux, nous sommes arrives au bout de cette premier partie :). Notre espace d'hegement est enfin pret pour accueillir un site generer par wbhorison.
 
 ## Transfert des fichiers sur le serveur OVH
@@ -92,3 +92,10 @@ L'installation se poursuit de maniere automatique : <br>
 ![image](../../assets/images/web-cloud-14.png)
 A la fin de se processus vous devez creer un nom d'utilisateur et un mot de passe pour le compte administrateur principal.
 ![image](../../assets/images/web-cloud-15.png)
+
+## Erreurs possible
+
+Vous pouvez rencontrer des erreurs de styles à la fin du processus d'installation de base, pour regler se probleme vous devez effacer les caches et recharger les styles avec CTRL+F5.
+![image](../../assets/images/web-cloud-16.png)
+
+<div class="alert alert-warning"> Pour nettoyer les caches acceder à cette url : /admin/config/development/performance et cliquer sur le bouton "Clear all cache". <br> Ensuite, faites CTRL+ F5 </div>
