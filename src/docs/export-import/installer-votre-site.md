@@ -35,11 +35,18 @@ Vous devez patienter quelques minutes avant que cela ne prenne effet. <br>
 
 - **2/3 Modification du dossier racine** : Cette etape permet de dire au serveur au se trouve le fichier index.php. :)
   Nous devons modifier le domaine et le premier sous domaine (www.); ainsi que la racine.
+
   ![image](../../assets/images/web-cloud-4.png)
   Modification du domaine principal : Cliquez sur les 3 points dans le cercle, ensuite sur "modifier le domaine".
   ![image](../../assets/images/web-cloud-5.png)
-  Ensuite : Ajouter "/web" sur le champs "Dossier racine" :
+  Ensuite, dans le champ racine remplacer **"www"** par le nom ou l'id de votre site suivis de web.
+  ex: Pour un site de shopping par exemple nous aurons **shopping/web**. Si vous n'avez pas encore mis en place la structure de fichier, le repertoire **shopping/web** sera automatiquement créé.
+    <div class="alert alert-primary border-info border-right-0 border-top-0 border-bottom-0" role="alert">
+     <span class="font-weight-bold text-decoration-underline">NOTE:</span> Si vous souhaitez installer plusieurs site sur le même hebergement vous pouvez ajouter un reportoire à côte de la racine.
+     Par exemple si vous ajoutez un site de shopping vous pourrez le mettre dans le repertoire **batiment/web** à la même profondeur que le racine et remplacer **"www"** dans les étapes de configurations du chemin vers votre site par **batiment/web**
+  </div>
   ![image](../../assets/images/web-cloud-6.png)
+
   Ensuite : Cliquez sur suivant et sur "valider".
   NB: Reprennez la meme proceduire pour le premier sous domaine, i.e celui commencant par "www." <br>
   à la fin vous devez optenir ceci :
