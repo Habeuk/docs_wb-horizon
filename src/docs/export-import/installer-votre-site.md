@@ -77,17 +77,45 @@ Sur ceux, nous sommes arrives au bout de cette premier partie :). Notre espace d
 
 **3/3 : Transfert des fichiers**:
 Pour le transfert, nous allons vous proposez 2 approche :<br>
-Methode 1 : pour debutant <br>
-Le fichier telecharger lors des etapes precedante se termine par "...wb*horizon_com.zip". Dézipper ce fichier, à partir de fillezilla, **copier son contenu vers /www**.<br>
-\_Cette methode est assez lente, et peut prendre jusqu'à 1 heure en fonction de votre vitesse de connexion.*<br>
-Methode 2 : PRO <br>
-Transferer le fichier zip directement sur /www. Connectez vous via un terminal (SSH) dezipper et transferer le contenu dans /www.
-<br> NB : N'oubliez pas de supprimer le dossier vide portant le nom "...wb_horizon_com" et le fichier zip.
+
+### Methode 1 : pour debutant <br>
+
+- **Decompresser les fichiers**: Le fichier telecharger lors des etapes precedante se termine par "...wb_horizon_com.zip". Dézipper ce fichier, à partir de fillezilla,
+
+- **Mise en place de la struture préconfiguré sur ovh**.<br>
+  Copier le contenu du dossier obtenu après décompression dans le fichier définit sur ovh (si dossier web a automatiquement été généré durant la configuration sur ovh il faudra le supprimer avec d'éffectuer la copie) dans notre vas nous avons configuré **shopping/web** nous supprimons donc **web** de repertoire **shopping** et nous copions le contenu de notre fichier zip dans **shopping**
+  \_Cette methode est assez lente, et peut prendre jusqu'à 1 heure en fonction de votre vitesse de connexion.\*<br>
+
+### Methode 2 : PRO <br>
+
+- **supprimez le repertoire qui a été généré automatiquement**: Si le repertoire configuré sur ovh a été automatiquement généré (dans notre cas **shopping/web**)
+- **transférez le fichier à la racine de l'hebergement (./)**
+
+- **Connectez vous via un terminal (SSH) dezipper et renommez le repertoire obtenu après décompression**: dans notre exemple, nous avons définit comme chemin pour notre fichier "shopping/web". après la décompression nous renommons le fichier obtenu (...wb_horizon_com) en **shopping**. Ce repertoire contient déjà un repertoire **web** donc, plus besoin de le créer.
+
+ <div class="alert alert-primary border-info border-right-0 border-top-0 border-bottom-0" role="alert">
+  <span class="font-weight-bold text-decoration-underline">NB:</span>
+  N'oubliez pas de supprimer le fichier fichier zip.
+ </div>
 
 ```
 ssh renothy@ssh.cluster027.hosting.ovh.net:22
 mv  {...}_wb_horizon_com/{.,}* ~/www/
 rm -rf {...}_wb_horizon_c*
+```
+
+## Forcer la redirection vers HTTPS
+
+Pour forcer la redirections vers https lorsque le site est demandé en http, Vous devez ajouter le code suivant dans le fichier **{repertoire_du_site}/web/.htaccess** où {repertoire_du_site} est le repertoire configuré sur ovh
+
+dans notre exemple on a configuré **shopping/web**, {repertoire_du_site} est donc **shopping** et on modifie le fichier **shopping/web/.htaccess**
+
+```apache
+   # NEW CODE HERE #
+   RewriteCond %{HTTPS} off
+   RewriteCond %{HTTP:X-Forwarded-Proto} !https
+   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+   # END NEW CODE #
 ```
 
 ## Installation de base
