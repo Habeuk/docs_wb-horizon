@@ -40,10 +40,12 @@ Vous devez patienter quelques minutes avant que cela ne prenne effet. <br>
   Modification du domaine principal : Cliquez sur les 3 points dans le cercle, ensuite sur "modifier le domaine".
   ![image](../../assets/images/web-cloud-5.png)
   Ensuite, dans le champ racine remplacer **"www"** par le nom ou l'id de votre site suivis de web.
-  ex: Pour un site de shopping par exemple nous aurons **shopping/web**. Si vous n'avez pas encore mis en place la structure de fichier, le repertoire **shopping/web** sera automatiquement créé.
+
+  **Ex**: Pour un site de shopping par exemple nous aurons **shopping/web**. Si vous n'avez pas encore mis en place la structure de fichier, le repertoire **shopping/web** sera automatiquement créé.
     <div class="alert alert-primary border-info border-right-0 border-top-0 border-bottom-0" role="alert">
-     <span class="font-weight-bold text-decoration-underline">NOTE:</span> Si vous souhaitez installer plusieurs site sur le même hebergement vous pouvez ajouter un reportoire à côte de la racine.
-     Par exemple si vous ajoutez un site de shopping vous pourrez le mettre dans le repertoire **batiment/web** à la même profondeur que le racine et remplacer **"www"** dans les étapes de configurations du chemin vers votre site par **batiment/web**
+    <span class="font-weight-bold text-decoration-underline">NOTE:</span>
+    Si vous souhaitez installer plusieurs site sur le même hebergement vous pouvez ajouter un reportoire à la racine (**./**).
+    Par exemple si vous ajoutez un site de batiment vous pourrez le mettre dans le repertoire **batiment/web** à la racine(**./**) 
   </div>
   ![image](../../assets/images/web-cloud-6.png)
 
