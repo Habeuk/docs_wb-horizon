@@ -39,13 +39,13 @@ Vous devez patienter quelques minutes avant que cela ne prenne effet. <br>
   ![image](../../assets/images/web-cloud-4.png)
   Modification du domaine principal : Cliquez sur les 3 points dans le cercle, ensuite sur "modifier le domaine".
   ![image](../../assets/images/web-cloud-5.png)
-  Ensuite, dans le champ racine remplacer **"www"** par le nom ou l'id de votre site suivis de web.
+  Ensuite, dans le champ racine remplacer **"www"** par le nom de domaine de votre site suivis de web.
 
-  **Ex**: Pour un site de shopping par exemple nous aurons **shopping/web**. Si vous n'avez pas encore mis en place la structure de fichier, le repertoire **shopping/web** sera automatiquement créé.
+  **Ex**: Pour le site **renothermique.com** nous aurons **renothermique/web**. Si vous n'avez pas encore mis en place la structure de fichier, le repertoire **renothermique/web** sera automatiquement créé.
     <div class="alert alert-primary border-info border-right-0 border-top-0 border-bottom-0" role="alert">
     <span class="font-weight-bold text-decoration-underline">NOTE:</span>
     Si vous souhaitez installer plusieurs site sur le même hebergement vous pouvez ajouter un reportoire à la racine (**./**).
-    Par exemple si vous ajoutez un site de batiment vous pourrez le mettre dans le repertoire **batiment/web** à la racine(**./**) 
+    Par exemple si vous ajoutez un site de batiment.com vous pourrez le mettre dans le repertoire **batiment/web** à la racine(**./**) 
   </div>
   ![image](../../assets/images/web-cloud-6.png)
 
@@ -83,15 +83,15 @@ Pour le transfert, nous allons vous proposez 2 approche :<br>
 - **Decompresser les fichiers**: Le fichier telecharger lors des etapes precedante se termine par "...wb_horizon_com.zip". Dézipper ce fichier, à partir de fillezilla,
 
 - **Mise en place de la struture préconfiguré sur ovh**.<br>
-  Copier le contenu du dossier obtenu après décompression dans le fichier définit sur ovh (si dossier web a automatiquement été généré durant la configuration sur ovh il faudra le supprimer avec d'éffectuer la copie) dans notre vas nous avons configuré **shopping/web** nous supprimons donc **web** de repertoire **shopping** et nous copions le contenu de notre fichier zip dans **shopping**
+  Copier le contenu du dossier obtenu après décompression dans le fichier définit sur ovh (si dossier web a automatiquement été généré durant la configuration sur ovh il faudra le supprimer avec d'éffectuer la copie) dans notre vas nous avons configuré **renothermique/web** nous supprimons donc **web** de repertoire **renothermique** et nous copions le contenu de notre fichier zip dans **renothermique**
   \_Cette methode est assez lente, et peut prendre jusqu'à 1 heure en fonction de votre vitesse de connexion.\*<br>
 
 ### Methode 2 : PRO <br>
 
-- **supprimez le repertoire qui a été généré automatiquement**: Si le repertoire configuré sur ovh a été automatiquement généré (dans notre cas **shopping/web**)
+- **supprimez le repertoire qui a été généré automatiquement**: Si le repertoire configuré sur ovh a été automatiquement généré (dans notre cas **renothermique/web**)
 - **transférez le fichier à la racine de l'hebergement (./)**
 
-- **Connectez vous via un terminal (SSH) dezipper et renommez le repertoire obtenu après décompression**: dans notre exemple, nous avons définit comme chemin pour notre fichier "shopping/web". après la décompression nous renommons le fichier obtenu (...wb_horizon_com) en **shopping**. Ce repertoire contient déjà un repertoire **web** donc, plus besoin de le créer.
+- **Connectez vous via un terminal (SSH) dezipper et renommez le repertoire obtenu après décompression**: dans notre exemple, nous avons définit comme chemin pour notre fichier "renothermique/web". après la décompression nous renommons le fichier obtenu (...wb_horizon_com) en **renothermique**. Ce repertoire contient déjà un repertoire **web** donc, plus besoin de le créer.
 
  <div class="alert alert-primary border-info border-right-0 border-top-0 border-bottom-0" role="alert">
   <span class="font-weight-bold text-decoration-underline">NB:</span>
@@ -106,9 +106,9 @@ rm -rf {...}_wb_horizon_c*
 
 ## Forcer la redirection vers HTTPS
 
-Pour forcer la redirections vers https lorsque le site est demandé en http, Vous devez ajouter le code suivant dans le fichier **{repertoire_du_site}/web/.htaccess** où {repertoire_du_site} est le repertoire configuré sur ovh
+Pour forcer la redirections vers https lorsque le site est demandé en http, Vous devez ajouter le code suivant dans le fichier **{repertoire_du_site}/web/.htaccess** en dessous de `RewriteEngine on` où {repertoire_du_site} est le repertoire configuré sur ovh
 
-dans notre exemple on a configuré **shopping/web**, {repertoire_du_site} est donc **shopping** et on modifie le fichier **shopping/web/.htaccess**
+dans notre exemple on a configuré **renothermique/web**, {repertoire_du_site} est donc **renothermique** et on modifie le fichier **renothermique/web/.htaccess**
 
 ```apache
    # NEW CODE HERE #
@@ -116,6 +116,31 @@ dans notre exemple on a configuré **shopping/web**, {repertoire_du_site} est do
    RewriteCond %{HTTP:X-Forwarded-Proto} !https
    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
    # END NEW CODE #
+```
+
+Votre fichier devrait ressembler à :
+
+```
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+   # NEW CODE HERE #
+   RewriteCond %{HTTPS} off
+   RewriteCond %{HTTP:X-Forwarded-Proto} !https
+   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+   # END NEW CODE #
+
+  # Set "protossl" to "s" if we were accessed via https://.  This is used later
+  # if you enable "www." stripping or enforcement, in order to ensure that
+  # you don't bounce between http and https.
+  RewriteRule ^ - [E=protossl]
+  RewriteCond %{HTTPS} on
+  RewriteRule ^ - [E=protossl:s]
+
+  # Make sure Authorization HTTP header is available to PHP
+  # even when running as CGI or FastCGI.
+  RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 ```
 
 ## Installation de base
