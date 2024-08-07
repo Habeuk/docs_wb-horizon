@@ -106,6 +106,7 @@ rm -rf {...}_wb_horizon_c*
 
 ## Forcer la redirection vers HTTPS
 
+1/2- : <br>
 Pour forcer la redirections vers https lorsque le site est demandé en http, Vous devez ajouter le code suivant dans le fichier **{repertoire_du_site}/web/.htaccess** en dessous de `RewriteEngine on` où {repertoire_du_site} est le repertoire configuré sur ovh
 
 dans notre exemple on a configuré **renothermique/web**, {repertoire_du_site} est donc **renothermique** et on modifie le fichier **renothermique/web/.htaccess**
@@ -141,6 +142,36 @@ Votre fichier devrait ressembler à :
   # Make sure Authorization HTTP header is available to PHP
   # even when running as CGI or FastCGI.
   RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+```
+
+2/2- : <br>
+Vous devez egalement ajouter le code suivant dans de la ligne "Header always set X-Content-Type-Options nosniff" :
+
+```
+# Custom code :
+  Header always unset Content-Length
+```
+
+<br>
+votre fichier devrait resseble à ceci :
+
+```
+# Various header fixes.
+<IfModule mod_headers.c>
+  # Disable content sniffing for all responses, since it's an attack vector.
+  # This header is also set in FinishResponseSubscriber, which depending on
+  # Apache configuration might get placed in the 'onsuccess' table. To prevent
+  # header duplication, unset that one prior to setting in the 'always' table.
+  # See "To circumvent this limitation..." in
+  # https://httpd.apache.org/docs/current/mod/mod_headers.html.
+  Header onsuccess unset X-Content-Type-Options
+  Header always set X-Content-Type-Options nosniff
+  # custom code :
+  Header always unset Content-Length
+  #
+  # Disable Proxy header, since it's an attack vector.
+  RequestHeader unset Proxy
+</IfModule>
 ```
 
 ## Installation de base
