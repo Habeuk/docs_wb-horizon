@@ -173,6 +173,10 @@ module.exports = {
               title: "Importer votre site",
               path: "/docs/export-import/importer-votre-site",
             },
+            {
+              title: "Quelques configurations après import de votre site ",
+              path: "/docs/export-import/configuration-post-install",
+            },
           ],
         },
         {
