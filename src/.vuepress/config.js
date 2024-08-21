@@ -115,6 +115,9 @@ module.exports = {
               ],
             },
             {
+              title: "Configure contact email",
+              path: "/docs/gestion-sites-pages/webforms",
+            },{
               title: "Troubleshooting",
               path: "/docs/gestion-sites-pages/troubleshooting",
             },
