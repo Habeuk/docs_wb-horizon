@@ -115,6 +115,9 @@ module.exports = {
               ],
             },
             {
+              title: "Configure contact email",
+              path: "/docs/gestion-sites-pages/webforms",
+            },{
               title: "Troubleshooting",
               path: "/docs/gestion-sites-pages/troubleshooting",
             },
@@ -172,6 +175,10 @@ module.exports = {
             {
               title: "Importer votre site",
               path: "/docs/export-import/importer-votre-site",
+            },
+            {
+              title: "Quelques configurations après import de votre site ",
+              path: "/docs/export-import/configuration-post-install",
             },
           ],
         },

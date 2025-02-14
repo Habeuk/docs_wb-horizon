@@ -36,3 +36,12 @@ Après avoir installé votre site, vous êtes redirigé vers une page vide. Conn
 ## 4. Finalisation
 
 Dans la page qui suit (Régénérer votre thème), cliquez sur **Terminer le processus**.
+
+## 5. Effacer les caches
+
+Certaines configurations doivent être mises à jour en cache pour être prises en compte par Drupal. Pour que cela soit possible, il vous faut effacer les caches. L'une des méthodes pour le faire est la suivante :
+
+- Allez dans _Configuration>Développement>Performance_.
+  ![image](../../assets/images/import/import_7.png)
+- Cliquez sur le bouton **Effacer tous les caches**.
+  ![image](../../assets/images/import/import_8.png)
