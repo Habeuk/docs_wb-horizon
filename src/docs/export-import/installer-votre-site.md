@@ -100,13 +100,25 @@ Pour le transfert, nous allons vous proposez 2 approche :<br>
 
 ```
 ssh renothy@ssh.cluster027.hosting.ovh.net:22
-mv  {...}_wb_horizon_com/{.,}* ~/www/
-rm -rf {...}_wb_horizon_c*
+unzip {...}_wb_horizon_com
+mv  {...}_wb_horizon_com/{.,}* ~/{id_domaine}/
+rm -rf {...}_wb_horizon_com
+```
+
+**Example :** <br>
+Vous avez transferer votre zip **"nettoyage_et_debarras1069_wb_horizon_com.zip"**.<br>
+Votre avez crrer un dossier **"renothermique"** pour contenir les données de votre site. ( _Voir l'etape : 2/3 Modification du dossier racine_ ).<br>
+
+```
+ssh renothy@ssh.cluster027.hosting.ovh.net:22
+unzip nettoyage_et_debarras1069_wb_horizon_com.zip
+mv  nettoyage_et_debarras1069_wb_horizon_com/{.,}* ~/renothermique/
+rm -rf nettoyage_et_debarras1069_wb_horizon_com
 ```
 
 ## Forcer la redirection vers HTTPS
 
-1/2- : <br>
+1/2 : <br>
 Pour forcer la redirections vers https lorsque le site est demandé en http, Vous devez ajouter le code suivant dans le fichier **{repertoire_du_site}/web/.htaccess** en dessous de `RewriteEngine on` où {repertoire_du_site} est le repertoire configuré sur ovh
 
 dans notre exemple on a configuré **renothermique/web**, {repertoire_du_site} est donc **renothermique** et on modifie le fichier **renothermique/web/.htaccess**
@@ -144,7 +156,7 @@ Votre fichier devrait ressembler à :
   RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 ```
 
-2/2- : <br>
+2/2 : <br>
 Vous devez egalement ajouter le code suivant dans de la ligne "Header always set X-Content-Type-Options nosniff" :
 
 ```
