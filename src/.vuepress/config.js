@@ -117,7 +117,8 @@ module.exports = {
             {
               title: "Configure contact email",
               path: "/docs/gestion-sites-pages/webforms",
-            },{
+            },
+            {
               title: "Troubleshooting",
               path: "/docs/gestion-sites-pages/troubleshooting",
             },
@@ -171,6 +172,10 @@ module.exports = {
             {
               title: "Transfert des fichiers et installation de base",
               path: "/docs/export-import/installer-votre-site",
+            },
+            {
+              title: "Installation sur le VPS incus",
+              path: "/docs/export-import/installer-vps-incus",
             },
             {
               title: "Importer votre site",
