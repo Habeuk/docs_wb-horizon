@@ -188,6 +188,25 @@ module.exports = {
           ],
         },
         {
+          title: "Gestion d'un nouveau VPS",
+          path: "/docs/vps/installation",
+          collapsable: true,
+          children: [
+            {
+              title: "Installation automatique d'un VPS",
+              path: "/docs/vps/installation",
+            },
+            {
+              title: "Re-initialisation d'un VPS",
+              path: "/docs/vps/re-installation",
+            },
+            {
+              title: "Ajout d'un site sur un VPS",
+              path: "/docs/vps/install-site",
+            },
+          ],
+        },
+        {
           title: "Configuration des moyens de paiment",
           // path: "/docs/moyens-de-paiment",
           collapsable: true,
