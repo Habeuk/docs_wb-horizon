@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://habeuk.com/sites/default/files/styles/medium/public/2022-07/untitled-42_4x-v2.png
+heroImage: https://wb-horizon.com/sites/default/files/2024-02/logo-min-2.png
 tagline: "Cette documentation couvre l'utilisation et l'aspect conception & technique"
 actionText: Quick Start →
 actionLink: /docs/

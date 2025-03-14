@@ -7,6 +7,34 @@
 
 Connectez-vous sur le nouveau VPS, les instructions sont envoyés par mail.
 
+Pour se connecter sur le serveur VPS :
+
+```bash
+ssh debian@193.70.85.188
+```
+
+NB: il faudra ajutser l'adresse ip en fonction de votre serveur.
+
+Si vous avez une erreur en relation avec :
+
+```bash
+... The authenticity of host '193.70.85.188 (193.70.85.188)' can't be established.
+ED25519 key fingerprint is SHA256:gWzdhhYZ57oLqhnkAozN/U4WAFvadZS5QfV0xks2obQ.
+This key is not known by any other names ...
+```
+
+il faut supprimer l'ancienne clé en executant la commande :
+
+```bash
+ssh-keygen -R 193.70.85.188
+```
+
+Si le probleme persite supprimé le fichier des hotes SSH :
+
+```bash
+rm ~/.ssh/known_hosts
+```
+
 **Changer l'adresse SSH par défaut par 38297**
 
 ```bash
@@ -32,6 +60,20 @@ Conncectez vous sur le serveur wbhorizon:
 ```bash
 ssh debian@152.228.134.19 -p 8888
 ```
+
+### Verifer que vous pouvez acceder au vps distant :
+
+```bash
+ssh debian@193.70.85.188 -p 38297
+```
+
+Une foix cette verification effectuer, arreter la connexion avec le serveur distant :
+
+```bash
+exit
+```
+
+### Configuration de base permettant d'ajouter le nouveau vps au processus d'ansible :
 
 Ajouter les parametres du nouveau VPS dans le fichier `hosts`:
 
@@ -61,4 +103,16 @@ Ensuite, executé la commande suivante pour lancer le playbook ansible:
 ansible-playbook -i inventory.yml playbook.yml --ask-vault-pass
 ```
 
-Le mot de passe demandé est celui du compte wb-horizon.
+**Le mot de passe demandé est celui du compte wb-horizon.**
+
+L'installation du nouveau serveur prendra environ 10 à 13 minutes.  
+Le login du compte est : 'admin', le numero de port 8083 et le mot de passe, voir dans le fichier approprié.
+
+```bash
+host : https://193.70.85.188:8083/
+login: admin
+pass: *****
+```
+
+Une foix l'installation terminé, saisir l'adresse du nouveau serveur dans un navigateur vous devez avoir cette image.
+![Test install serveur](../../assets/images/test-install-serveur.png)

@@ -174,6 +174,10 @@ module.exports = {
               path: "/docs/export-import/installer-votre-site",
             },
             {
+              title: "Installation en ligne de commande sur le VPS",
+              path: "/docs/export-import/installer-vps-en-command",
+            },
+            {
               title: "Installation sur le VPS incus",
               path: "/docs/export-import/installer-vps-incus",
             },
