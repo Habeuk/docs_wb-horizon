@@ -60,6 +60,12 @@ module.exports = {
     sidebar: {
       "/docs/": [
         {
+          title: "Presentation",
+          path: "/docs/index",
+          collapsable: true,
+          children: [{ title: "Introduction", collapsable: false }],
+        },
+        {
           title: "Gestion des sites et pages",
           path: "/docs/gestion-sites-pages/introduction",
           collapsable: true,
@@ -230,6 +236,14 @@ module.exports = {
           path: "/docs/configurations-post-import/introduction",
           children: [
             {
+              title: "Config SMTP/OVH",
+              path: "/docs/configurations-post-import/config-smtp-ovh",
+            },
+            {
+              title: "Creation de l'API Google reCAPTCHA",
+              path: "/docs/configurations-post-import/creation-api-google-recapchat",
+            },
+            {
               title: "Passerelles de paiements",
               path: "/docs/configurations-post-import/payments",
             },
@@ -248,12 +262,6 @@ module.exports = {
               path: "/docs/modele-de-page",
             },
           ],
-        },
-        {
-          title: "Presentation",
-          path: "/docs/index",
-          collapsable: false,
-          children: [{ title: "Introduction", collapsable: false }],
         },
         {
           title: "Creer un modele site web",
